@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试页面 - 前端功能测试环境</title>
+    
+    <!-- 引入jQuery库 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 页面头部导航 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>前端测试环境</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#test" class="nav-link">功能测试</a>
+                <a href="#layout" class="nav-link">布局测试</a>
+                <a href="#about" class="nav-link">关于</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="main">
+        <div class="container">
+            <!-- 欢迎区域 -->
+            <section class="welcome-section">
+                <h2>欢迎使用前端测试环境</h2>
+                <p>这是一个功能完整的前端测试页面，包含多种交互功能和布局测试。</p>
+                <div class="time-display">
+                    <span>当前时间：</span>
+                    <span id="current-time"></span>
+                </div>
+            </section>
+
+            <!-- 按钮测试区域 -->
+            <section id="test" class="test-section">
+                <h3>按钮功能测试</h3>
+                <div class="button-group">
+                    <button id="test-btn" class="btn btn-primary">测试按钮</button>
+                    <button id="clear-btn" class="btn btn-secondary">清空内容</button>
+                    <button id="toggle-btn" class="btn btn-success">切换显示</button>
+                </div>
+                <div id="test-output" class="output-area">
+                    <p>点击上方按钮查看效果...</p>
+                </div>
+            </section>
+
+            <!-- 输入测试区域 -->
+            <section class="input-section">
+                <h3>输入功能测试</h3>
+                <div class="input-group">
+                    <input type="text" id="user-input" class="input-field" placeholder="请输入测试内容...">
+                    <button id="submit-btn" class="btn btn-info">提交</button>
+                </div>
+                <div id="input-result" class="result-area">
+                    <p>输入结果将显示在这里...</p>
+                </div>
+            </section>
+
+            <!-- 动态列表区域 -->
+            <section class="list-section">
+                <h3>动态列表测试</h3>
+                <button id="add-item-btn" class="btn btn-warning">添加列表项</button>
+                <ul id="dynamic-list" class="dynamic-list">
+                    <li class="list-item">默认列表项 1 - 点击切换状态</li>
+                    <li class="list-item">默认列表项 2 - 点击切换状态</li>
+                    <li class="list-item">默认列表项 3 - 点击切换状态</li>
+                </ul>
+            </section>
+
+            <!-- 布局测试区域 -->
+            <section id="layout" class="layout-section">
+                <h3>布局测试区域</h3>
+                <p>以下是按照特定要求的div布局：</p>
+                <div class="layout-container">
+                    <div class="box box-1">盒子 1</div>
+                    <div class="box box-2">盒子 2</div>
+                    <div class="box box-3">盒子 3</div>
+                    <div class="box box-4">盒子 4</div>
+                    <div class="box box-5">盒子 5</div>
+                    <div class="box box-6">盒子 6</div>
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页面底部 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 前端测试环境. 使用jQuery和现代CSS技术构建.</p>
+        </div>
+    </footer>
+
+    <!-- 引入自定义JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
